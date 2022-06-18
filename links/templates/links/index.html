@@ -1,0 +1,32 @@
+{% extends "links/main.html" %}
+{% block content %}
+
+	<div class="table">
+		<table class="tg">
+			<thead>
+			<tr>
+				<th class="tg-wp8o">Gospodarz</th>
+				<th class="tg-wp8o">Wynik</th>
+				<th class="tg-wp8o">Gość</th>
+				<th class="tg-wp8o">Dzień</th>
+				<th class="tg-wp8o">Miesiąc/Rok</th>
+				<th class="tg-wp8o">Godzina</th>
+			</tr>
+			{% for keys, values in matches2.items %}
+
+
+  			<tr>
+    			<td class="tg-zkvm">{{ keys.0 }}</td>
+    			<td class="tg-zkvm">{{ keys.1 }}</td>
+    			<td class="tg-zkvm">{{ keys.2 }}</td>
+    			<td class="tg-zkvm">{{ values.0 }}</td>
+    			<td class="tg-zkvm">{{ values.1 }}</td>
+    			<td class="tg-zkvm">{{ values.2 }}</td>
+
+  			</tr>
+			{% endfor %}
+			</thead>
+		</table>
+	</div>
+{%endblock%}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>App</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS
+		<link rel="stylesheet" href="{% static 'todoapp/bs/css/flatly.min.css'%}" /> -->
+		<link rel="stylesheet" href="{% static 'links/style.css'%}"  />
+
+	</head>
+	<body>
+
+	<div class="table">
+		<table class="tg">
+			<thead>
+			<tr>
+				<th class="tg-wp8o">Gospodarz</th>
+				<th class="tg-wp8o">Wynik</th>
+				<th class="tg-wp8o">Gość</th>
+				<th class="tg-wp8o">Dzień</th>
+				<th class="tg-wp8o">Miesiąc/Rok</th>
+				<th class="tg-wp8o">Godzina</th>
+			</tr>
+			{% for keys, values in matches2.items %}
+
+
+  			<tr>
+    			<td class="tg-zkvm">{{ keys.0 }}</td>
+    			<td class="tg-zkvm">{{ keys.1 }}</td>
+    			<td class="tg-zkvm">{{ keys.2 }}</td>
+    			<td class="tg-zkvm">{{ values.0 }}</td>
+    			<td class="tg-zkvm">{{ values.1 }}</td>
+    			<td class="tg-zkvm">{{ values.2 }}</td>
+
+  			</tr>
+			{% endfor %}
+			</thead>
+		</table>
+	</div>
+	</body>
+</html>

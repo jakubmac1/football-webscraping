@@ -55,10 +55,12 @@ color: darkgrey;}
 }
 
 #footer {
-    position: absolute;
+    margin-top: 400px;
+    position: auto;
     bottom: 30px;
     width: 100%;
 }
+
 /* The sidebar links */
 .sidebar a {
   padding: 8px 8px 8px 32px;

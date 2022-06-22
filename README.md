@@ -1,5 +1,4 @@
 # football-webscraping
-football970913.herokuapp.com/        This site is using BeautifulSoup4 for webscraping matches from football data website. It scrapes the data from a website: Łączy nas piłka. Choose your league and you will see the timetable. It will show you first the upcoming matches and then the latest. This site is still in progress
 
 Football webscraping app
 This site is using BeautifulSoup4 for webscraping matches from football data website.
